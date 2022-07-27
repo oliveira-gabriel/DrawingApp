@@ -12,10 +12,13 @@
 		4E1C0C402890FC980082568C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C0C3F2890FC980082568C /* Assets.xcassets */; };
 		4E1C0C432890FC980082568C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C0C422890FC980082568C /* Preview Assets.xcassets */; };
 		4E1C0C452890FC980082568C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C442890FC980082568C /* Persistence.swift */; };
-		4E1C0C482890FC980082568C /* Drawing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C462890FC980082568C /* Drawing.xcdatamodeld */; };
 		4E1C0C522890FC990082568C /* DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C512890FC990082568C /* DrawingTests.swift */; };
 		4E1C0C5C2890FC990082568C /* DrawingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C5B2890FC990082568C /* DrawingUITests.swift */; };
 		4E1C0C5E2890FC990082568C /* DrawingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C5D2890FC990082568C /* DrawingUITestsLaunchTests.swift */; };
+		4E1C0C6B2890FCBA0082568C /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C6A2890FCBA0082568C /* Canvas.swift */; };
+		4E1C0C712890FDC30082568C /* Drawing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C6F2890FDC30082568C /* Drawing.xcdatamodeld */; };
+		4E1C0C742891100F0082568C /* Drawing+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C722891100F0082568C /* Drawing+CoreDataClass.swift */; };
+		4E1C0C752891100F0082568C /* Drawing+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C0C732891100F0082568C /* Drawing+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +45,15 @@
 		4E1C0C3F2890FC980082568C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E1C0C422890FC980082568C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E1C0C442890FC980082568C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		4E1C0C472890FC980082568C /* Drawing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drawing.xcdatamodel; sourceTree = "<group>"; };
 		4E1C0C4D2890FC990082568C /* DrawingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1C0C512890FC990082568C /* DrawingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTests.swift; sourceTree = "<group>"; };
 		4E1C0C572890FC990082568C /* DrawingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1C0C5B2890FC990082568C /* DrawingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUITests.swift; sourceTree = "<group>"; };
 		4E1C0C5D2890FC990082568C /* DrawingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E1C0C6A2890FCBA0082568C /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		4E1C0C702890FDC30082568C /* Drawing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drawing.xcdatamodel; sourceTree = "<group>"; };
+		4E1C0C722891100F0082568C /* Drawing+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drawing+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4E1C0C732891100F0082568C /* Drawing+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drawing+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 		4E1C0C3A2890FC970082568C /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				4E1C0C722891100F0082568C /* Drawing+CoreDataClass.swift */,
+				4E1C0C732891100F0082568C /* Drawing+CoreDataProperties.swift */,
 				4E1C0C3B2890FC970082568C /* DrawingApp.swift */,
 				4E1C0C3D2890FC970082568C /* ContentView.swift */,
+				4E1C0C6F2890FDC30082568C /* Drawing.xcdatamodeld */,
+				4E1C0C6A2890FCBA0082568C /* Canvas.swift */,
 				4E1C0C3F2890FC980082568C /* Assets.xcassets */,
 				4E1C0C442890FC980082568C /* Persistence.swift */,
-				4E1C0C462890FC980082568C /* Drawing.xcdatamodeld */,
 				4E1C0C412890FC980082568C /* Preview Content */,
 			);
 			path = Drawing;
@@ -263,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E1C0C482890FC980082568C /* Drawing.xcdatamodeld in Sources */,
+				4E1C0C742891100F0082568C /* Drawing+CoreDataClass.swift in Sources */,
 				4E1C0C452890FC980082568C /* Persistence.swift in Sources */,
+				4E1C0C712890FDC30082568C /* Drawing.xcdatamodeld in Sources */,
 				4E1C0C3E2890FC970082568C /* ContentView.swift in Sources */,
+				4E1C0C752891100F0082568C /* Drawing+CoreDataProperties.swift in Sources */,
+				4E1C0C6B2890FCBA0082568C /* Canvas.swift in Sources */,
 				4E1C0C3C2890FC970082568C /* DrawingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,12 +599,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		4E1C0C462890FC980082568C /* Drawing.xcdatamodeld */ = {
+		4E1C0C6F2890FDC30082568C /* Drawing.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				4E1C0C472890FC980082568C /* Drawing.xcdatamodel */,
+				4E1C0C702890FDC30082568C /* Drawing.xcdatamodel */,
 			);
-			currentVersion = 4E1C0C472890FC980082568C /* Drawing.xcdatamodel */;
+			currentVersion = 4E1C0C702890FDC30082568C /* Drawing.xcdatamodel */;
 			path = Drawing.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
